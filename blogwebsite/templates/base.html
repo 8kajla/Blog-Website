@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block css_style %}{% endblock %}
+</head>
+<body>
+<main>
+<header>
+    <nav>
+        <a href="{% url 'home_page' %} "> Home Page </a>
+        <form action="{% url 'search_blog' %}" method="get" class="search-form">
+            <label>
+                <input type="text" name="q" placeholder="Search blogs...">
+            </label>
+            <button type="submit">Search</button>
+        </form>
+        <a href="{% url 'all_post' %} "> All Blogs </a>
+        <a href="{% url 'authors' %}">Authors</a>
+    </nav>
+</header>
+
+    {% block body_content %}{% endblock %}
+
+</main>
+</body>
+</html>

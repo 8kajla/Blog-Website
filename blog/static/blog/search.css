@@ -1,0 +1,43 @@
+/* Search results page container */
+.search-results {
+    margin-top: 40px;
+}
+
+/* Search heading */
+.search-results h2 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Highlight search keyword */
+.search-results span.query {
+    color: #00c3ff;
+}
+
+/* Posts grid */
+.search-results .posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Individual post card */
+.search-results article {
+    background-color: #202020;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #2c2c2c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.search-results article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 195, 255, 0.12);
+}
+
+/* Post title */
+.search-results h3 {
+    font-size: 20px;
+    color: #ffffff}

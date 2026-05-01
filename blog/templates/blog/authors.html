@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %} Authors {% endblock %}
+
+{% block css_style %}
+<link rel="stylesheet" href="{% static 'blog/authors.css' %}">
+{% endblock %}
+
+
+{% block body_content %}
+<section class="authors-page">
+    <h1>All authors</h1>
+    <div class="authors-list">
+        {% for i in author %}
+        <div class="author-card">
+            <h2><a href="{% url 'author_url' i.slug_author %}">{{ i.first_name }} {{ i.last_name }}</a></h2>
+            <h3>No of Blogs:{{ i.blog_count }}</h3>
+            <h3>About Me: {{i.about_me}}</h3>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+
+
+{% endblock %}

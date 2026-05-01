@@ -1,0 +1,14 @@
+{% load static %}
+
+<ul>
+
+    <li>
+        <article>
+            <img src="{% static  i.image %}" width="300" height="200" alt="{{ i.title }}">
+            <h3><a href="{% url 'blog_url' i.slug %}">{{ i.title }}</a> </h3>
+            <p>{{ i.preview }}</p>
+        </article>
+
+    </li>
+
+ </ul>

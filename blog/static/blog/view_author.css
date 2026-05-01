@@ -1,0 +1,52 @@
+/* Author page wrapper */
+.author-page {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Author header */
+.author-header {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #2c2c2c;
+}
+
+/* Author name */
+.author-header h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Author bio */
+.author-bio {
+    font-size: 16px;
+    color: #cfcfcf;
+    line-height: 1.7;
+}
+
+/* Section title */
+.author-posts-title {
+    font-size: 26px;
+    color: #00c3ff;
+    margin-bottom: 25px;
+}
+
+/* Author posts grid */
+.author-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* No posts message */
+.no-posts {
+    color: #aaaaaa;
+    font-size: 16px;
+    padding: 20px;
+    background-color: #181818;
+    border-radius: 6px;
+    border: 1px dashed #333;
+}

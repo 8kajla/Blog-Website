@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}Home Page{% endblock %}
+{% block css_style %}<link rel="stylesheet" href="{% static "blog/home.css" %}"> {% endblock %}
+    {% block body_content %}
+
+     <section>
+         <h1>This is Home Page</h1>
+         <h2>I write about python and stuff.</h2>
+     </section>
+     <section>
+        <h3>
+            Featured Blogs
+        </h3>
+        <div class="featured-posts">
+            {% for i in blog %}
+            {% include 'blog/includes/post.html' %}
+            {% endfor %}
+        </div>
+     </section>
+     <section>
+        <h2>About the Author</h2>
+        <p>This is about the author of these blogs</p>
+        <p>you can contact the author on contact@gmail.com</p>
+     </section>
+
+    {% endblock %}
+

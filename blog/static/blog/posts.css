@@ -1,0 +1,62 @@
+/* Individual blog post container */
+.post-detail {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Blog image */
+.post-detail img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Blog title */
+.post-detail h1 {
+    font-size: 34px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Meta info (date, author later) */
+.post-meta {
+    font-size: 14px;
+    color: #9e9e9e;
+    margin-bottom: 30px;
+}
+
+/* Blog content */
+.post-content {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #dcdcdc;
+}
+
+/* Paragraph spacing inside content */
+.post-content p {
+    margin-bottom: 18px;
+}
+
+/* Headings inside blog content */
+.post-content h2,
+.post-content h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Links inside blog content */
+.post-content a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}

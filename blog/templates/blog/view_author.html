@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}{{author.first_name}} {{author.last_name}}{% endblock %}
+{% block css_style %}
+<link rel="stylesheet" href="{% static 'blog/view_author.css' %}">
+{% endblock %}
+ {% block body_content %}
+<section class="author-page">
+    <div class="author-header">
+       <h1>{{author.first_name}} {{author.last_name}}</h1>
+       <p class="author-bio">{{author.about_me}}</p>
+    </div>
+     <h2 class="author-posts-title">All the blogs by {{author.first_name}} {{author.last_name}}</h2>
+     <div class="author-posts">
+        {% for i in blog %}
+        {% include 'blog/includes/post.html' %}
+        {% endfor %}
+     </div>
+
+</section>
+ {% endblock %}

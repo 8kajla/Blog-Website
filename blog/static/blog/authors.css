@@ -1,0 +1,56 @@
+/* All authors page wrapper */
+.authors-page {
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Page heading */
+.authors-page h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Authors list */
+.authors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Individual author card */
+.author-card {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #2c2c2c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.author-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 195, 255, 0.12);
+}
+
+/* Author name */
+.author-card h2 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Blog count */
+.author-card .blog-count {
+    font-size: 15px;
+    color: #00c3ff;
+    margin-bottom: 15px;
+}
+
+/* About section */
+.author-card .about {
+    font-size: 15px;
+    color: #cfcfcf;
+    line-height: 1.6;
+}

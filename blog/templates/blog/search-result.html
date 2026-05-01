@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}Search Results{% endblock %}
+
+{% block css_style %}
+<link rel="stylesheet" href="{% static 'blog/search.css' %}">
+{% endblock %}
+
+{% block body_content %}
+
+<section class="search-results">
+    <h2>Search results for "{{ search_query }}"</h2>
+
+    <div class="posts-list">
+        {% for i in blog %}
+            {% include 'blog/includes/post.html' %}
+        {% empty %}
+            <p>No blogs found.</p>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}
