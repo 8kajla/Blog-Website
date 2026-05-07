@@ -1,0 +1,58 @@
+/* All blogs page container */
+.all-posts {
+    margin-top: 30px;
+}
+
+/* Page heading */
+.all-posts h2 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Posts list layout */
+.posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Reuse post card style */
+.posts-list article {
+    background-color: #202020;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #2c2c2c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.posts-list article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 195, 255, 0.12);
+}
+
+/* Post title */
+.posts-list h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Post summary */
+.posts-list p {
+    color: #cfcfcf;
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Read more link */
+.posts-list a {
+    color: #00c3ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.posts-list a:hover {
+    text-decoration: underline;
+}

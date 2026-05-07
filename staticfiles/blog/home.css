@@ -1,0 +1,49 @@
+/* Featured posts container */
+.featured-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* Individual post card */
+.featured-posts article {
+    background-color: #202020;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2c2c2c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.featured-posts article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 195, 255, 0.15);
+}
+
+/* Post title */
+.featured-posts h2,
+.featured-posts h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+/* Post excerpt */
+.featured-posts p {
+    color: #bdbdbd;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Read more link */
+.featured-posts a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-posts a:hover {
+    text-decoration: underline;
+}
